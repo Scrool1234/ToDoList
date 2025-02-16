@@ -6,8 +6,6 @@ import java.util.ArrayList;
 public class TaskService {
     private ArrayList<Task> tasks = new ArrayList<>();
     private int nextId = 1;
-    private static final String API_KEY = "";
-    private static final String BASE_URL = "https://app.asana.com/api/1.0";
 
     public void addTask(Task task) {
         task.setId(nextId++);
